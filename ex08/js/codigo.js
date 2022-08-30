@@ -1,9 +1,11 @@
-let num = prompt();
+let num = prompt("introduce un numero");
 
-function factorial (n) {
-    if(n%2==0){
-        alert("Es par!")
+let msg = function(num) {
+    if(num%2==0){
+        return "Es par!";
     }else{
-        alert("Es impar!")
+        return "Es impar!";
     }
 }
+
+alert(msg(num));
